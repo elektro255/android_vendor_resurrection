@@ -85,6 +85,15 @@ PRODUCT_PACKAGES += \
     NexusLauncher \
     Wallpaper
 
+# PowerEventMgr
+PRODUCT_COPY_FILES += \
+    vendor/cm/prebuilt/timur/PowerEventMgr.apk:system/app/PowerEventMgr/PowerEventMgr.apk
+
+# Timur's extras
+PRODUCT_COPY_FILES += \
+    vendor/cm/prebuilt/timur/powerdown.jpg:system/powerdown.jpg \
+    vendor/cm/prebuilt/timur/powerup.jpg:system/powerup.jpg
+
 # DU Utils Library
 PRODUCT_BOOT_JARS += \
     org.dirtyunicorns.utils
@@ -174,8 +183,6 @@ PRODUCT_PACKAGES += \
 
 # Custom CM packages
 PRODUCT_PACKAGES += \
-    ResurrectionOTA \
-    ResurrectionStats \
     Trebuchet \
     AudioFX \
     CMFileManager \
